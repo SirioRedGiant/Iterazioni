@@ -171,7 +171,7 @@ const numeroBase = 7;
 
 // --- Scrivi qui il codice ---
 for (let i = 1; i <= 10; i++) {
-  console.log(numeroBase * i);
+  console.log(numeroBase + " * " + i + " = " + numeroBase * i);
   
 }
 
