@@ -456,3 +456,93 @@ for (let i = 1;i <= 8; i++) {
 
 
 console.log("===================================================================================================================================");
+
+
+/**
+ * LIVELLO 2.1: LOGICA AVANZATA 
+*/
+
+// EX S: IL FILTRO INCROCIATO
+// Obiettivo: Cicla i numeri da 1 a 30.
+// Stampa il numero solo se:
+// - È un multiplo di 2 
+// - MA NON è un multiplo di 3
+// (Esempio: 2 va bene, 4 va bene, 6 NO perché è multiplo di 3)
+
+// --- Scrivi qui il codice ---
+for (let i = 1; i <= 30; i++) {
+  if (i % 2 === 0 && i % 3 !== 0) {
+    console.log(i);    
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX T: IL SOMMATORE DI POTENZE
+// Obiettivo: Calcola la somma dei quadrati dei numeri da 1 a 5.
+// (1*1 + 2*2 + 3*3 + 4*4 + 5*5)
+// Stampa solo il risultato finale.
+let sommaQuadrati = 0;
+//note 1+4+9+16+25
+
+// --- Scrivi qui il codice ---
+for (let i = 1; i <= 5; i++) {
+  
+  sommaQuadrati += i * i  
+}
+console.log(sommaQuadrati);
+
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX U: CONTROLLO RANGE (DOPPIA CONDIZIONE)
+// Obiettivo: Cicla i numeri da 1 a 50.
+// Stampa il numero solo se:
+// - È divisibile per 7 
+// - OPPURE è un numero compreso tra 20 e 25 (inclusi).
+// Suggerimento: (condizione1 || (condizione2 && condizione3))
+
+// --- Scrivi qui il codice ---
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 7 === 0 || i >= 20 && i <= 25) {
+    console.log(i);    
+  }  
+}
+
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX V: IL CONTEGGIO DELLA LETTERA "e"
+// Obiettivo: Data la stringa 'frase', usa un ciclo for per contare quante 
+// volte appare la lettera "e" (sia minuscola che MAIUSCOLA).
+// Suggerimento: 'frase.length' ti dà la lunghezza, 'frase[i]' ti dà la lettera.
+const frase = "Educare e Elevare le menti";
+let conteggioE = 0;
+
+// --- Scrivi qui il codice ---
+
+for (let i = 0; i < frase.length; i++) {
+  if (frase[i] === "e" || frase[i] === "E") {
+    conteggioE += 1
+  }
+}
+console.log(conteggioE);
+
+
+
+
+
+console.log("===================================================================================================================================");
