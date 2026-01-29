@@ -348,3 +348,111 @@ for (let i = 10; i <= 100; i += 20) {
 
 
 console.log("===================================================================================================================================");
+
+
+
+/**
+ * LIVELLO 1.9 (HARD): LOGICA PURA E MATEMATICA
+ * 
+ * ISTRUZIONI:
+ * Questi richiedono più ragionamento. Prenditi tempo.
+*/
+
+// EX O: IL RE DEL RESTO (FIZZBUZZ BASE)
+// Obiettivo: Cicla i numeri da 1 a 20.
+// - Se il numero è divisibile sia per 3 che per 4, stampa "SUPER".
+// - Se è divisibile solo per 3, stampa "TRE".
+// - Se è divisibile solo per 4, stampa "QUATTRO".
+// - Altrimenti, stampa il numero normale.
+
+// --- Scrivi qui il codice ---
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 && i % 4 === 0) {
+    console.log("super");    
+  }
+  else if (i % 3 === 0) {
+    console.log("TRE");    
+  }
+  else if (i % 4 === 0) {
+    console.log("QUATTRO");    
+  }
+  else {
+    console.log(i);    
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX P: L'ACCUMULATORE SELETTIVO
+// Obiettivo: Somma tra loro tutti i numeri da 1 a 50, 
+// MA solo se sono numeri PARI.
+// Stampa solo il risultato finale.
+let sommaPari = 0;
+
+// --- Scrivi qui il codice ---
+
+for(let i = 1; i <= 50; i++) {
+  if (i % 2 === 0) {
+    sommaPari += i
+  }
+}
+console.log(sommaPari);
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX Q: TROVA IL DIVISORE
+// Obiettivo: Dato il numero 'target', cicla tutti i numeri da 1 a 'target' (escluso).
+// Stampa solo i numeri che possono dividere perfettamente il target (quelli con resto 0).
+// Esempio con 12: dovrebbe stampare 1, 2, 3, 4, 6.
+const target = 12;
+
+// --- Scrivi qui il codice ---
+
+for (let i = 1; i < target;i ++) {
+  if (target % i === 0) {
+    console.log(i);    
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX R: LA STRINGA A SCACCHIERA
+// Obiettivo: Crea una stringa di 8 caratteri totali.
+// Deve alternare "#" e " " (spazio).
+// Risultato atteso: "# # # # "
+let scacchiera = "";
+
+// --- Scrivi qui il codice ---
+
+for (let i = 1; i <= 4;i++) {
+  scacchiera += "# "
+}
+console.log(scacchiera);
+
+//note rifare senza barare
+let scacchiera2 = "";
+
+for (let i = 1;i <= 8; i++) {
+  if (i % 2 !== 0) {
+    scacchiera2 += "#"
+  }
+  else {
+    scacchiera2 += " "
+  }
+}
+
+
+
+
+console.log("===================================================================================================================================");
