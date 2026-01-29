@@ -261,3 +261,90 @@ for (let i = 1; i <= 5; i++) {
 
 
 console.log("===================================================================================================================================");
+
+
+/**
+ * LIVELLO 1.8: LOGICA DI CONFRONTO E ACCUMULATORI
+*/
+
+// EX K: IL CONTEGGIO DEI DISPARI
+// Obiettivo: Cicla i numeri da 1 a 15.
+// Invece di stampare i numeri, conta quanti numeri DISPARI ci sono.
+// Stampa solo il risultato finale.
+// Risultato atteso: 8
+let quantiDispari = 0;
+
+// --- Scrivi qui il codice ---
+for (let i = 1; i <= 15; i++){
+  if (i % 2 !== 0) {
+    quantiDispari ++;
+  } 
+};
+console.log(quantiDispari);
+
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX L: LA STRINGA ALTERNATA
+// Obiettivo: Cicla per 6 volte. 
+// Se il giro è PARI aggiungi una "O" alla variabile 'stringa'.
+// Se il giro è DISPARI aggiungi una "X".
+// Stampa il risultato finale.
+// Risultato atteso: "XOXOXO" (partendo dal presupposto che 1 è dispari)
+let stringa = "";
+
+// --- Scrivi qui il codice ---
+
+for (let i = 1; i <= 6; i++){
+  if (i % 2 !== 0) {
+    stringa += "X"
+  } else {
+    stringa += "O"
+  }
+}
+console.log(stringa);
+
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX M: IL FILTRO DEI MULTIPLI
+// Obiettivo: Cicla i numeri da 1 a 20.
+// Stampa il numero solo se è divisibile per 3 O per 5.
+// Risultato atteso: 3, 5, 6, 9, 10, 12, 15, 18, 20
+
+// --- Scrivi qui il codice ---
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {
+    console.log(i);    
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX N: CAMBIO DI PASSO
+// Obiettivo: Stampa i numeri da 10 a 100, ma saltando di 20 in 20.
+// Risultato atteso: 10, 30, 50, 70, 90
+
+// --- Scrivi qui il codice ---
+for (let i = 10; i <= 100; i += 20) {
+  console.log(i);
+  
+}
+
+
+
+
+
+console.log("===================================================================================================================================");
