@@ -197,3 +197,67 @@ for (let i = 1; i <= 4; i++) {
 
 
 console.log("===================================================================================================================================");
+
+
+/**
+ * LIVELLO 1.7: TRASFORMARE E FILTRARE
+*/
+
+// EX H: IL RADDOPPIATORE SILENZIOSO
+// Obiettivo: Cicla i numeri da 1 a 10.
+// Se il numero è MAGGIORE di 5, stampa il suo doppio (es: 6 diventa 12).
+// Se è MINORE o UGUALE a 5, stampa il numero così com'è.
+
+// --- Scrivi qui il codice ---
+
+for (let i = 1; i <= 10; i++) {
+  if (i <= 5) {
+    console.log(i);    
+  } else {
+    console.log(i*2);    
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX I: LA STRINGA CRESCENTE
+// Obiettivo: Partendo da una stringa vuota, aggiungi un asterisco (*) ad ogni giro per 5 giri.
+// Stampa la stringa ad OGNI giro.
+// Risultato atteso:
+// *
+// **
+// ***
+// ****
+// *****
+let piramide = "";
+
+// --- Scrivi qui il codice ---
+for (let i = 1; i <= 5; i++) {
+  piramide += "*"
+  console.log(piramide);
+}
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX J: SALTA IL NUMERO 3
+// Obiettivo: Stampa i numeri da 1 a 5, ma quando arrivi al 3 non stampare nulla.
+// Risultato atteso: 1, 2, 4, 5
+
+// --- Scrivi qui il codice ---
+
+for (let i = 1; i <= 5; i++) {
+  if (i !== 3) {
+    console.log(i)
+  }
+}
+
+
+console.log("===================================================================================================================================");
