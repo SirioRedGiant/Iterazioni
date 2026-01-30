@@ -546,3 +546,94 @@ console.log(conteggioE);
 
 
 console.log("===================================================================================================================================");
+
+
+
+/**
+ * RISCALDAMENTO LIVELLO 2.5 (ELITE LOGIC)
+ * 
+ * Obiettivo: Gestire più variabili che cambiano dentro lo stesso ciclo.
+*/
+
+// EX 1: IL CONTEGGIO TRIPLO
+// Obiettivo: Cicla i numeri da 1 a 50.
+// Alla fine del ciclo, stampa tre messaggi diversi che dicono:
+// 1. Quanti numeri erano divisibili per 3
+// 2. Quanti numeri erano divisibili per 5
+// 3. Quanti numeri erano divisibili SIA per 3 che per 5
+let contatore3 = 0;
+let contatore5 = 0;
+let contatoreEntrambi = 0;
+
+// --- Scrivi qui il codice ---
+for (let i = 1; i <= 50; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    contatoreEntrambi += 1
+  }
+  else if (i % 3 === 0) {
+    contatore3 += 1
+  }
+  else if (i % 5 === 0) {
+    contatore5 += 1
+  }
+}
+console.log(contatoreEntrambi);
+console.log(contatore3);
+console.log(contatore5);
+
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX 2: LA STRINGA ALTERNATA COMPLESSA
+// Obiettivo: Crea una stringa di 10 caratteri.
+// - Se l'indice è divisibile per 3, aggiungi una "X"
+// - Altrimenti, se l'indice è PARI, aggiungi un "0" (zero)
+// - Altrimenti, aggiungi un "-" (trattino)
+// Stampa il risultato finale.
+// Risultato atteso: qualcosa tipo "0-0X0-X..." (dipende da come gestisci l'indice)
+let stringaComplessa = "";
+
+// --- Scrivi qui il codice ---
+for (let i = 0; i < 10; i++) {
+  if (i % 3 === 0) {
+    stringaComplessa += "X"
+  }
+  else if (i % 2 === 0) {
+    stringaComplessa += "0"
+  }
+  else {
+    stringaComplessa += "-"
+  }
+}
+console.log(stringaComplessa);
+
+
+
+// -----------------------------------------------------------------------------
+console.log("===================================================================================================================================");
+
+
+
+// EX 3: IL FILTRO DEI RANGE ESCLUSIVI
+// Obiettivo: Cicla i numeri da 1 a 100.
+// Stampa il numero solo se:
+// - È compreso tra 10 e 20 (inclusi)
+// - OPPURE è compreso tra 80 e 90 (inclusi)
+// - MA NON deve essere il numero 15 e NON deve essere il numero 85.
+
+// --- Scrivi qui il codice ---
+
+for (let i = 1; i <= 100; i++) {
+  if ((i >= 10 && i <= 20 || i >= 80 && i <= 90) && (i !== 15 && i !== 85)) {
+    console.log(i);
+    
+  }
+}
+
+
+
+console.log("===================================================================================================================================");
