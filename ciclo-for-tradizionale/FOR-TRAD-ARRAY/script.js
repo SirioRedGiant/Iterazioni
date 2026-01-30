@@ -157,8 +157,152 @@ for (let i = 0; i < temperature.length; i++) {
     }
 }
 
-
-
-
-
 console.log("=============================================================================================================================================================");
+
+
+/**
+ * LIVELLO 3.4: LOGICA AVANZATA SU ARRAY SEMPLICI
+ */
+
+// EX 13: IL CONFRONTO TRA LISTE
+// Obiettivo: Dati due array di numeri della stessa lunghezza, crea un terzo array 
+// 'risultato' che contenga la SOMMA dei numeri nelle stesse posizioni.
+// Esempio: [1, 2] + [10, 20] => [11, 22]
+const listaA = [5, 10, 15, 20];
+const listaB = [2, 4, 6, 8];
+const listaSommata = [];
+
+// --- Scrivi qui il codice ---
+
+
+
+
+// -----------------------------------------------------------------------------
+console.log("====================================================================================================================================================");
+
+
+
+// EX 14: IL RILEVATORE DI DOPPIONI (BASE)
+// Obiettivo: Dato un array di parole e una 'parolaChiave', conta quante volte 
+// la parola chiave appare, ma stampa un messaggio SOLO se appare più di una volta.
+const archivio = ["Test", "Ciao", "Mela", "Test", "Uva", "Test"];
+const parolaChiave = "Test";
+let contatoreChiave = 0;
+
+// --- Scrivi qui il codice ---
+for (let i = 0; i < archivio.length; i++) {
+    if (archivio[i] === parolaChiave) {
+        contatoreChiave += 1
+    }
+}
+if (contatoreChiave >= 2) {
+    console.log(contatoreChiave);
+}
+
+// -----------------------------------------------------------------------------
+console.log("====================================================================================================================================================");
+
+
+
+// EX 15: IL FILTRO DEGLI INDICI PARI
+// Obiettivo: Dato l'array 'numeri', inserisci nell'array 'risultato' solo i numeri 
+// che si trovano in una POSIZIONE (indice i) pari.
+// Nota: Non stiamo guardando se il numero è pari, ma se lo è la sua posizione!
+const dati = [100, 200, 300, 400, 500, 600];
+const risultatoPosizioniPari = [];
+
+// --- Scrivi qui il codice ---
+for (let i = 0; i < dati.length; i++) {
+    if (i % 2 === 0) {
+        risultatoPosizioniPari.push(dati[i]);
+    }
+}
+console.log(risultatoPosizioniPari);
+
+
+
+// -----------------------------------------------------------------------------
+console.log("====================================================================================================================================================");
+
+
+
+// EX 16: TROVA IL MINIMO (NON IL MASSIMO!)
+// Obiettivo: Trova il numero PIÙ PICCOLO all'interno dell'array 'temperature'.
+
+const temperature2 = [15, 8, 22, 3, 10, 12];
+let min = temperature2[0];
+
+// --- Scrivi qui il codice ---
+for (let i= 0; i < temperature2.length; i++) {
+    if (temperature2[i] < min) {
+        min = temperature2[i];
+    }
+}
+console.log(min);
+
+console.log("====================================================================================================================================================");
+
+/**
+ * LIVELLO 3.5: ARRAY "BRAIN-MELTER"
+*/
+
+// EX 17: IL RILEVATORE DI "DOPPIONI GENERICI"
+// Obiettivo: Senza usare una parola chiave fissa, controlla se l'array 'numeri' 
+// contiene almeno un numero duplicato (anche se non sai quale).
+// Se trovi un duplicato, imposta 'haDuplicati' a true e ferma il ciclo.
+const numeriDuplicati = [10, 5, 8, 3, 5, 12];
+let haDuplicati = false;
+
+// --- Scrivi qui il codice ---
+
+
+
+// -----------------------------------------------------------------------------
+console.log("====================================================================================================================================================");
+
+
+
+// EX 18: LA DIFFERENZA MASSIMA
+// Obiettivo: Trova la differenza più grande tra due numeri consecutivi nell'array.
+// Esempio: [10, 15, 30] -> la differenza tra 10 e 15 è 5, tra 15 e 30 è 15. Risultato: 15.
+const serie = [5, 10, 25, 30, 60, 65];
+let diffMassima = 0;
+
+// --- Scrivi qui il codice ---
+
+
+
+// -----------------------------------------------------------------------------
+console.log("====================================================================================================================================================");
+
+
+
+// EX 19: UNIONE E FILTRO (SENZA DOPPIONI)
+// Obiettivo: Dati due array 'lista1' e 'lista2', crea un terzo array 'unione' 
+// che contenga tutti gli elementi, MA solo se non sono già presenti (niente doppioni nell'unione).
+// Suggerimento: usa .includes() per controllare se un elemento c'è già prima di fare .push().
+const lista1 = ["Mela", "Pera"];
+const lista2 = ["Uva", "Mela", "Banana"];
+const unioneSenzaDoppioni = [];
+
+// --- Scrivi qui il codice ---
+
+
+
+// -----------------------------------------------------------------------------
+console.log("====================================================================================================================================================");
+
+
+
+// EX 20: L'INVERTITORE DI POSIZIONI (SWAP)
+// Obiettivo: Dato un array di 2 elementi, scambia la loro posizione senza creare un nuovo array.
+// Risultato atteso: ["Fine", "Inizio"]
+const coppia = ["Inizio", "Fine"];
+
+// --- Scrivi qui il codice ---
+
+
+
+
+
+console.log("====================================================================================================================================================");
