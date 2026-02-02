@@ -255,6 +255,32 @@ let haDuplicati = false;
 
 // --- Scrivi qui il codice ---
 
+for (let i = 0; i < numeriDuplicati.length; i++) {
+    for (let d = i + 1; d < numeriDuplicati.length; d++) {
+        if (numeriDuplicati[i] === numeriDuplicati[d]) {
+            haDuplicati = true;
+            break; //note esce dal ciclo interno
+        }
+    }
+    if (haDuplicati) {
+        break; //note esce dal ciclo esterno
+    }
+}
+console.log(haDuplicati);
+
+
+//note errata chiedere il perchè
+//^    for (let i = 0; i < numeriDuplicati.length; i++) {
+//^    const verificaDoppioni = [];
+//^        verificaDoppioni.push(numeriDuplicati[i]);
+//^        for (let d = 0; d < verificaDoppioni.length; d++) {
+//^            if (numeriDuplicati[d] === verificaDoppioni[d]) {
+//^                haDuplicati = true;
+//^            }
+//^        }
+//^    }
+//^    console.log(haDuplicati);
+
 
 
 // -----------------------------------------------------------------------------
